@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Sharing</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            max-width: 1200px;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .subtitle {
+            color: lightgray;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .content {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card {
+            background: #333;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            height: 270px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+        .card ul li {
+            margin-bottom: 8px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            border-radius: 20px;
+            background-color: orange;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+            text-align: center;
+            width: 80%;
+        }
+        .button:hover {
+            background-color: darkorange;
+        }
+        .logo {
+            width: 60px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">
+            <img src="./tewq.jpg" alt="Logo" class="logo"> Skills Sharing
+        </h1>
+        
+        <p class="subtitle">Skill sharing transforms competition into collaboration.</p>
+        <div class="content">
+            <!-- Lost and Found Card -->
+            <div class="card-container">
+                <div class="card">
+                    <h2>LinkedIn skills extraction</h2>
+                    <ul>
+                        <li>Redirects to a specialized LinkedIn page</li>
+                        <li>Scrapes the "About" section from the LinkedIn profile.</li>
+                        <li></li>Uses NLP to extract key skills.</li>
+                        <li>Returns a list of verified skills from the user's profile.</li>
+                    </ul>
+                </div>
+                <a href="https://linkedin-email.onrender.com" class="button">Extract Skills</a>
+            </div>
+
+            <!-- Skills Sharing Card -->
+            <div class="card-container">
+                <div class="card">
+                    <h2>Project Recommendation</h2>
+                    <ul>
+                        <li>Allows users to upload resumes in PDF, PPT, or PPTX format.</li>
+                        <li>Extracts key personal information such as Name, Email, Contact Number, LinkedIn, and GitHub.</li>
+                        <li>Generates project recommendations based on the extracted skills</li>
+                        <li>Enhances readability with a well-structured table format for personal details.</li>
+                    </ul>
+                </div>
+                <a href="https://project-recommendation-70a3.onrender.com" class="button">Recommend Projects</a>
+            </div>
+
+            <!-- Content Generation Card -->
+            <div class="card-container">
+                <div class="card">
+                    <h2>Project Helpers</h2>
+                    <ul>
+                        <li>Extracts key skills from user input using NLP techniques.</li>
+                        <li>Matches extracted skills with resume and LinkedIn profiles from the dataset.</li>
+                        <li>Ranks candidates based on skill match and internship duration.</li>
+                        <li>Displays the top 10 most suitable candidates in a structured format.</li>
+                    </ul>
+                </div>
+                <a href="https://helpers-mzv4.onrender.com" class="button">Find Helpers</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
